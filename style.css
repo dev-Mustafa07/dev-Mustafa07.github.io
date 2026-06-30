@@ -282,3 +282,115 @@ html {
 .ico {
     font-size: 30px;
 }
+
+#projects{
+    height: 80vh;
+    padding: 5% 7%;
+}
+
+.project-heading{
+    color: aqua;
+    font-size: 2rem;
+}
+
+.para{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.line{
+    height: 2px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.tech-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.tech-card-img{
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat:no-repeat ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img1{
+    background-size: cover;
+    background-image: url("images/math.jpg");
+}
+.img2{
+    background-size: cover;
+    background-image: url("images/rockstar.png");
+}
+
+.tech-card-cnt{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+
+}
+
+.tech-card{
+    height: 570px;
+    width: 450px;
+    background-color: rgba(1, 73, 73, 0.548);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.733);
+    backdrop-filter: blur(20px);
+    color: white;
+    transition: 0.5s ease;
+    box-sizing: content-box;
+}
+
+.tech-card:hover{
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+    border: 3px solid green;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.view {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid white;
+}
+
+.view:hover{
+    background-color: transparent;
+    color: aqua;
+    border: 2px solid aqua;
+}
