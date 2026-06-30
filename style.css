@@ -15,7 +15,7 @@ body {
         #04191d;
     color: white;
     height: 100vh;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -202,4 +202,83 @@ html {
     background-color: aqua;
     color: black;
     border: 2px solid aqua;
+}
+
+#about-me {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-heading {
+    color: aqua;
+}
+
+.cnt {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.aboutcard {
+    height: 250px;
+    width: 250px;
+    background-color: rgba(240, 248, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 0.5px solid white;
+    border-radius: 20px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 25px rgba(0, 245, 255, .2);
+}
+
+.aboutcard:hover {
+    transform: translateY(-8px);
+    border-color: #00F5FF;
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.box {
+    cursor: default;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutcard h1 {
+    font-size: 1rem;
+    color: aqua;
+    
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.ico {
+    font-size: 30px;
 }
