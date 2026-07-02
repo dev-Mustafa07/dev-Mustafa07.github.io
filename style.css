@@ -16,7 +16,7 @@ body {
     );
     color: white;
     height: auto;
-    padding: 0 0 100px 0;
+    padding: 0 0 300px 0;
     overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ html {
 
     background: radial-gradient(
         circle,
-        rgba(120,119,198,.45) 0%,
+        rgba(206, 215, 28, 0.45) 0%,
         rgba(0,212,255,.25) 40%,
         transparent 70%
     );
@@ -98,7 +98,7 @@ html {
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav-links li {
@@ -246,24 +246,54 @@ html {
 }
 
 #about-me {
-    height: 60vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    gap: 20px;
+}
+
+
+.aboutcnt{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.imgcontainer{
+    overflow: hidden;
+    border-radius: 50px;
+    border: 5px solid aqua;
+    transition: 0.3s ease;
+    height: 500px;
+    width: 400px;
+}
+
+.imgcontainer:hover{
+    transform: scale(0.8);
+    border-radius: 80px;
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/aboutimg.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+
+.img:hover{
+    transform: scale(1.5);
 }
 
 .about-heading {
     color: aqua;
-}
-
-.cnt {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-right: 50px;
+    margin-bottom: 30px;
 }
 
 .aboutcard {
@@ -442,4 +472,8 @@ html {
     background-color: transparent;
     color: aqua;
     border: 2px solid aqua;
+}
+
+#mytechstack{
+    height: 100vh;
 }
