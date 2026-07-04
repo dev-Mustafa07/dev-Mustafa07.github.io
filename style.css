@@ -8,12 +8,10 @@
 }
 
 body {
-    background: linear-gradient(
-        135deg,
-        #021c1b,
-        #062b2d,
-        #031515
-    );
+    background: linear-gradient(135deg,
+            #021c1b,
+            #062b2d,
+            #031515);
     color: white;
     height: auto;
     padding: 0 0 300px 0;
@@ -24,7 +22,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.circle{
+.circle {
     width: 600px;
     height: 600px;
 
@@ -34,30 +32,28 @@ html {
 
     border-radius: 50%;
 
-    background: radial-gradient(
-        circle,
-        rgba(206, 215, 28, 0.45) 0%,
-        rgba(0,212,255,.25) 40%,
-        transparent 70%
-    );
+    background: radial-gradient(circle,
+            rgba(206, 215, 28, 0.45) 0%,
+            rgba(0, 212, 255, .25) 40%,
+            transparent 70%);
 
     filter: blur(120px);
 
     animation: float 10s ease-in-out infinite alternate;
 }
 
-@keyframes float{
+@keyframes float {
 
-    0%{
-        transform: translate(0,0);
+    0% {
+        transform: translate(0, 0);
     }
 
-    50%{
-        transform: translate(-150px,80px);
+    50% {
+        transform: translate(-150px, 80px);
     }
 
-    100%{
-        transform: translate(-250px,-50px);
+    100% {
+        transform: translate(-250px, -50px);
     }
 
 }
@@ -256,13 +252,13 @@ html {
 }
 
 
-.aboutcnt{
+.aboutcnt {
     display: flex;
     width: 50%;
     flex-direction: column;
 }
 
-.imgcontainer{
+.imgcontainer {
     overflow: hidden;
     border-radius: 50px;
     border: 5px solid aqua;
@@ -271,13 +267,13 @@ html {
     width: 400px;
 }
 
-.imgcontainer:hover{
+.imgcontainer:hover {
     transform: scale(0.8);
     border-radius: 80px;
     box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
 }
 
-.img{
+.img {
     height: 100%;
     width: 100%;
     background-image: url("images/aboutimg.jpeg");
@@ -287,7 +283,7 @@ html {
     transition: 0.3s ease;
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.5);
 }
 
@@ -296,29 +292,6 @@ html {
     margin-bottom: 30px;
 }
 
-.aboutcard {
-    height: 250px;
-    width: 250px;
-    background-color: rgba(240, 248, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border: 0.5px solid white;
-    border-radius: 20px;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    transition: 0.3s ease;
-    box-shadow: 0 0 25px rgba(0, 245, 255, .2);
-}
-
-.aboutcard:hover {
-    transform: translateY(-8px);
-    border-color: #00F5FF;
-    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
 
 .box {
     cursor: default;
@@ -473,35 +446,96 @@ html {
     border: 2px solid aqua;
 }
 
-#mytechstack{
+#mytechstack {
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding: 5% 10% 0 10%;
     gap: 50px;
 }
 
-.techstackheading{
+.techstackheading {
     color: aqua;
 }
 
-#mytechstack p{
+#mytechstack p {
     text-align: justify;
 }
 
-.tech-cardss{
+.tech-cardss {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 100%;
 }
 
-
-#experience{
+.aboutcard {
+    height: 250px;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 0.5px solid white;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 25px rgba(0, 245, 255, .2);
+}
+
+.aboutcard:hover {
+    transform: translateY(-8px);
+    border-color: #00F5FF;
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+}
+
+.aboutcard1 {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.aboutcard2:hover {
+    border-radius: 50px;
+}
+
+.aboutcard3 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2% 10% 0 10%;
+    gap: 20px;
+}
+
+.experienceheading{
+    color: aqua;
+    font-size: 2.5rem;
+}
+
+.timeline{
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 5px 15px;
+    border: 0.5px rgba(255, 255, 255, 0.263) solid;
+    border-radius: 10px;
+}
+
+#experience p{
+    text-align: justify;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     padding: 5% 10% 0 10%;
+    gap: 20px;
 }
