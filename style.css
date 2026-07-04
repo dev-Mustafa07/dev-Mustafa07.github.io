@@ -529,6 +529,7 @@ html {
 
 #experience p{
     text-align: justify;
+    width: 50vw;
 }
 
 #education {
@@ -538,4 +539,59 @@ html {
     align-items: start;
     padding: 5% 10% 0 10%;
     gap: 20px;
+}
+
+.abouteducation{
+    display: flex;
+    flex-direction: row;
+}
+.classes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.class{
+    background-color: #062b2d;
+    border-radius: 10px;
+    padding: 30px 50px;
+    width: 80%;
+    border: rgba(255, 255, 255, 0.266) 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transition: 0.3s ease;
+}
+
+.class:hover{
+    border: rgba(23, 255, 236, 0.748) 2px solid;
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+
+}
+.goals:hover{
+    border: rgba(23, 255, 236, 0.748) 2px solid;
+    box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2);
+
+}
+
+.achievements h2{
+    margin-bottom: 20px;
+}
+
+.goals{
+    transition: 0.3s ease;
+    background-color: #062b2d;
+    border-radius: 10px;
+    padding: 20px 50px;
+    width: 50%;
+    border: rgba(255, 255, 255, 0.266) 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.goals ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
