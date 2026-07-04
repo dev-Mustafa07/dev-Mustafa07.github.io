@@ -355,7 +355,6 @@ html {
 }
 
 #projects {
-    height: 80vh;
     padding: 5% 10%;
 }
 
@@ -475,16 +474,34 @@ html {
 }
 
 #mytechstack{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
+    padding: 5% 10% 0 10%;
+    gap: 50px;
+}
+
+.techstackheading{
+    color: aqua;
+}
+
+#mytechstack p{
+    text-align: justify;
 }
 
 .tech-cardss{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10% 0 10%;
 }
