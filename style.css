@@ -212,7 +212,6 @@ html {
     background-color: aqua;
     color: black;
     border: none;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -242,7 +241,7 @@ html {
 }
 
 #about-me {
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -316,11 +315,14 @@ html {
 }
 
 @keyframes blink {
-    0%, 49% {
+
+    0%,
+    49% {
         visibility: visible;
     }
 
-    50%, 100% {
+    50%,
+    100% {
         visibility: hidden;
     }
 }
@@ -775,3 +777,51 @@ html {
 }
 
 /* Add responsiveness */
+
+@media (max-width: 768px) {
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutcnt {
+        width: 80%;
+        text-align: center;
+    }
+
+    .techstackheading {
+        text-align: center;
+    }
+    .tech-cardss{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutcard{
+        border-radius: 20px;
+        height: 30vh;
+    }
+    .line{
+        display: none;
+    }
+    .para p {
+    width: 80%;
+}
+.tech-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-card{
+    width: 80vw;
+}
+}
