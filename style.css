@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    /* outline: 2px solid red; */
 }
 
 body {
@@ -59,17 +60,21 @@ html {
 
 }
 
+.fa-bars{
+    display: none;
+    visibility: hidden;
+}
+
 .nav {
     background-color: rgba(240, 248, 255, 0.1);
     backdrop-filter: blur(20px);
     border-bottom: 0.5px solid white;
-    width: 100%;
-    height: 80px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 0 5%;
+    padding: 1% 5%;
     position: fixed;
     z-index: 1000;
 }
@@ -136,6 +141,16 @@ html {
 
 .name {
     font-size: 3rem;
+}
+
+.bars{
+    background-color: #021c1b;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: aqua;
+    border: 1px solid aqua;
 }
 
 
@@ -740,7 +755,7 @@ html {
     gap: 10px;
     align-items: center;
     justify-content: center;
-    transform: scale(1.3);
+    /* transform: scale(1.3); */
     margin-top: 20px;
 }
 
@@ -815,9 +830,13 @@ html {
     .mid {
         display: none;
     }
+    
+    .btn{
+        width: 100%;
+    }
 
     #hero {
-        padding-top: 150px;
+        padding-top: 200px;
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -825,9 +844,26 @@ html {
     }
 
     .nav {
-        height: auto;
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
     }
+
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .fa-bars{
+    visibility: visible;
+}
 
     .left {
         width: 100%;
