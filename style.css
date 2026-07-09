@@ -15,6 +15,7 @@ body {
             #031515);
     color: white;
     height: auto;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -189,7 +190,8 @@ html {
 }
 
 #hero p {
-    width: 50vw;
+    width: 100%;
+    max-width: 700px;
 }
 
 .buttons {
@@ -362,6 +364,10 @@ html {
 
 .yellowcircle {
     background-color: yellow;
+}
+
+.heading {
+    font-size: 2rem;
 }
 
 .about-heading {
@@ -610,7 +616,8 @@ html {
 
 #experience p {
     text-align: justify;
-    width: 50vw;
+    width: 100%;
+    max-width: 800px;
 }
 
 #education {
@@ -625,6 +632,7 @@ html {
 .abouteducation {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .classes {
@@ -637,7 +645,7 @@ html {
     background-color: #062b2d;
     border-radius: 10px;
     padding: 30px 50px;
-    width: 80%;
+    width: 100%;
     border: rgba(255, 255, 255, 0.266) 2px solid;
     display: flex;
     flex-direction: column;
@@ -695,18 +703,23 @@ html {
 
 .single {
     background-color: rgba(0, 0, 0, 0.55);
-    padding: 5px 20px 5px 15px;
-    /* width: 500px; */
+    /* padding: 5px 20px 5px 15px; */
+    /* width: 50%; */
     border: 0.5px rgba(255, 255, 255, 0.263) solid;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     gap: 30px;
+
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .single a {
     color: white;
     text-decoration: none;
+    width: 300px;
 }
 
 .single a:hover {
@@ -780,15 +793,49 @@ html {
     border-top: 2px solid aqua;
 }
 
+
 /* Add responsiveness */
 
 @media (max-width: 768px) {
 
+    .circle {
+        width: 300px;
+        height: 300px;
+        right: -120px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .mid {
+        display: none;
+    }
+
     #hero {
+        padding-top: 150px;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
+
+    .nav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .right {
+        margin-top: 10px;
     }
 
     #about-me {
@@ -833,13 +880,18 @@ html {
     }
 
     .tech-card {
-        width: 80vw;
-        height: 78vh;
+        width: 100%;
+        height: auto;
+    }
+
+    .tech-card-img {
+        height: 220px;
+
     }
 
     .terminal {
-        transform: scale(0.8);
         margin-left: 0;
+        width: 100%;
     }
 
     #experience {
@@ -879,4 +931,9 @@ html {
         gap: 5px;
     }
 
+    .foot {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
 }
