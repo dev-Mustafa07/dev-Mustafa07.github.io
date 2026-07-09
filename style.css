@@ -262,7 +262,6 @@ html {
 }
 
 .terminal {
-    transition: 0.3s ease;
     height: 600px;
     /* box-shadow: 0 0 35px 10px rgba(0, 245, 255, .2); */
     width: 500px;
@@ -598,6 +597,10 @@ html {
     font-size: 2.5rem;
 }
 
+.profession {
+    font-size: 1.5rem;
+}
+
 .timeline {
     background-color: rgba(0, 0, 0, 0.55);
     padding: 5px 15px;
@@ -711,7 +714,8 @@ html {
 }
 
 #footer {
-    height: 60vh;
+    height: auto;
+    padding: 20px 0;
     border-top: 2px solid rgba(204, 28, 28, 0.498);
     background-color: #062b2d;
     margin-top: 100px;
@@ -765,7 +769,7 @@ html {
 
 .last {
     width: 100%;
-    height: 20%;
+    padding: 20px 0;
     background-color: #021c1b;
     text-align: center;
     display: flex;
@@ -792,6 +796,8 @@ html {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        gap: 0;
+        padding-top: 50px;
     }
 
     .aboutcnt {
@@ -802,26 +808,75 @@ html {
     .techstackheading {
         text-align: center;
     }
-    .tech-cardss{
+
+    .tech-cardss {
         display: flex;
         flex-direction: column;
     }
-    .aboutcard{
+
+    .aboutcard {
         border-radius: 20px;
         height: 30vh;
     }
-    .line{
+
+    .line {
         display: none;
     }
-    .para p {
-    width: 80%;
-}
-.tech-cards{
-    display: flex;
-    flex-direction: column;
-}
 
-.tech-card{
-    width: 80vw;
-}
+    .para p {
+        width: 80%;
+    }
+
+    .tech-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech-card {
+        width: 80vw;
+        height: 78vh;
+    }
+
+    .terminal {
+        transform: scale(0.8);
+        margin-left: 0;
+    }
+
+    #experience {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experience ul li {
+        text-align: left;
+    }
+
+    #experience p {
+        width: 100%;
+    }
+
+    .abouteducation {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .class {
+        width: 100%;
+    }
+
+    .goals {
+        width: 100%;
+    }
+
+    .topp {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        margin-top: 5px;
+        gap: 5px;
+    }
+
 }
